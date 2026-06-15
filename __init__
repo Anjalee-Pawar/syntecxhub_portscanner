@@ -1,0 +1,21 @@
+"""
+Syntecxhub Port Scanner
+~~~~~~~~~~~~~~~~~~~~~~~
+A fast multithreaded TCP port scanner.
+
+Basic usage:
+    from syntecxhub_portscanner import PortScanner
+
+    scanner = PortScanner(timeout=1.0, max_threads=100)
+    results = scanner.scan_range("192.168.1.1", 1, 1024)
+    scanner.print_summary()
+"""
+
+from .scanner import PortScanner, PortResult
+from .logger import setup_logger
+
+__version__ = "1.0.0"
+__author__ = "Syntecxhub"
+__license__ = "MIT"
+
+__all__ = ["PortScanner", "PortResult", "setup_logger"]
