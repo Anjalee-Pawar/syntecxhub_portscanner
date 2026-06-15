@@ -1,0 +1,7 @@
+# Syntecxhub Port Scanner — Project 1
+# Python standard library only — no external dependencies required.
+# All modules used (socket, threading, logging, json, concurrent.futures)
+# are included in Python 3.8+.
+
+# Optional: for running tests
+pytest>=7.0
